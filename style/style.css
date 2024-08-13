@@ -1,0 +1,85 @@
+/* Agregue una fuente de google que me pareció más interesante para mi página web y la enlace directamente con el index */
+@font-face {
+    font-family: "Roboto";
+    src: url(Roboto_Mono/RobotoMono-Italic-VariableFont_wght.ttf);
+    font-weight: 500;
+  }
+  
+  /* ==================================================================================== */
+  
+  /* Cuerpo de Toda la pagina tendra las opciones del body */
+  body {
+  font-family: "Roboto";
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0ee;
+  }
+  
+  /* En el encabezado de la página */
+  header {
+  background-color: #f0f0ee;
+  color: #191919;
+  }
+  
+  /* ==================================================================================== */
+  
+  /* Lo agregue para que la parte del header tuviera límites a los lados y se viera más centrado */
+
+  /* Títulos principales de las páginas */
+  /* Agregue una nueva clase para los títulos de las páginas agregar */
+  .title-body {
+  text-align: center;
+  border-bottom: solid;
+  border-radius: 1.875rem; /* 30px */
+  font-size: 1.5em;
+  margin-bottom: 1.25rem; /* 20px */
+  }
+  
+  /* Agregue el Logo de la marca usando las medidas del wireframe referente */
+  .logo-header {
+  width: 3.75rem; /* 60px */
+  height: 3.625rem; /* 58px */
+  }
+  
+  /* Sección del Navbar */
+  
+  /* Van todos los detalles del NavBar como individuales y en conjunto */
+  .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  font-size: smaller;
+  }
+  
+  .navbar .marca {
+  display: flex;
+  align-items: center;
+  }
+  
+  /* Aquí le quite el estilo de tipo lista que viene incluido */
+  .navbar .nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  }
+  
+  .navbar .nav-links li {
+  margin-left: 1rem;
+  }
+  
+  .navbar .nav-links a {
+  color: #191919;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s;
+  }
+  
+  /* Agregue para que el cursor se posicionara arriba marcara un poco más oscuro */
+  .navbar .nav-links a:hover {
+  background-color: #191919;
+  border-radius: 0.3125rem; /* 5px */
+  color: #fff;
+  }
+  
