@@ -12,12 +12,12 @@ body {
   font-family: "Roboto";
   margin: 0;
   padding: 0;
-  background-color: #ffffffa7;
+  background-color: #f0f0ee;
 }
 
 /* En el encabezado de la página */
 header {
-  background-color: #ffffff;
+  background-color: #f0f0ee;
   color: #191919;
 }
 
@@ -32,6 +32,20 @@ header {
   border-radius: 0.3125rem; /* 5px */
   color: #fff;
   transition: 1s;
+}
+.titulo {
+  font-size: large;
+  color: #191919;
+  margin-left: 0.625rem; /* 10px */
+}
+
+/* Agregue una nueva clase para los títulos de las páginas agregar */
+.title-body {
+  text-align: center;
+  border-bottom: solid;
+  border-radius: 1.875rem; /* 30px */
+  font-size: 1.5em;
+  margin-bottom: 1.25rem; /* 20px */
 }
 
 /* ==================================================================================== */
@@ -49,6 +63,90 @@ header {
   color: #ffffff;
   padding: 2rem;
 }
+.hero h2 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin: 0.5rem 0 0;
+}
+
+/* ==================================================================================== */
+.cont-nosotros{
+    margin-right: 20%;
+    margin: auto;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+
+.nosotros {
+  background-color: #f0f0ee;
+  display: flex;
+  text-align: center;
+  transition-duration: 1s;
+  width: 100%;
+}
+
+.nosotros:hover {
+  background-color: #fff;
+  box-shadow: 0.625rem 0.3125rem 0.3125rem #f1511b; /* 10px 5px 5px */
+  border-radius: 1.875rem; /* 30px */
+}
+
+.text-nosotros {
+  margin: 1.875rem; /* 30px */
+  margin-top: 5rem; /* 80px */
+}
+.cont-grip{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+/* Estilo para la sección "aboutUs" */
+.aboutUs {
+  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem; /* Espacio entre elementos */
+  padding: 2rem; /* Espaciado alrededor del contenedor */
+  background-color: #f0f0ee; /* Fondo del contenedor */
+  justify-items: center; /* Centrar los elementos en cada celda */
+  margin-top: 3rem;
+}
+
+/* Estilo para los elementos "about-icon" dentro de la cuadrícula */
+.about-icon {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.about-icon:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para las imágenes de los iconos */
+.about-icon img.icon {
+  max-width: 100px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+/* Estilo para los párrafos dentro de "about-icon" */
+.about-icon p.propositos {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 0;
+}
+
+/* ==================================================================================== */
 
 footer {
   background-color: #f0f0ee; /* Color de fondo del footer */
