@@ -74,12 +74,12 @@ header {
 }
 
 /* ==================================================================================== */
-.cont-nosotros{
-    margin-right: 20%;
-    margin: auto;
-    flex-wrap: wrap;
-    text-align: center;
-    justify-content: center;
+.cont-nosotros {
+  margin-right: 20%;
+  margin: auto;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
 }
 
 .nosotros {
@@ -100,9 +100,9 @@ header {
   margin: 1.875rem; /* 30px */
   margin-top: 5rem; /* 80px */
 }
-.cont-grip{
-    margin-left: 10%;
-    margin-right: 10%;
+.cont-grip {
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 /* Estilo para la sección "aboutUs" */
@@ -147,6 +147,109 @@ header {
 }
 
 /* ==================================================================================== */
+
+.hero-contacto {
+  background-image: url(./Imagenes/ORBIT\ brand-5.png);
+  background-size: cover;
+  background-position: center;
+  height: 12.5rem; /* 200px */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  color: #f1511b;
+  padding: 2rem;
+}
+
+/* Estilo de la Sección de Contacto */
+.contact-box {
+  background-color: #f9f9f9;
+  padding: 2rem;
+  margin: 2rem auto;
+  border-radius: 1.5rem; /* 24px */
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1); /* 8px 16px */
+  max-width: 24rem;
+  text-align: center;
+  transition-duration: 1s;
+}
+
+.contact-container h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.contact-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.form-group label {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 0.125rem solid #ddd; /* 2px */
+  border-radius: 0.5rem; /* 8px */
+  font-size: 1rem;
+  color: #333;
+  background-color: #fff;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #f1511b; /* Color de enfoque */
+  outline: none;
+}
+
+.submit-button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem; /* 8px */
+  background-color: #f1511b; /* Color del botón */
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #ff48008e; /* Color del botón al pasar el mouse */
+}
+
+.video-direccion {
+  align-items: center;
+  text-align: center;
+  font-size: smaller;
+}
+
+.input-contacto {
+  flex-wrap: wrap;
+  width: 12.5rem; /* 200px */
+  padding: 0.625rem; /* 10px */
+  height: 18.75rem; /* 300px */
+  margin-top: 1.25rem; /* 20px */
+}
+
+textarea {
+  resize: vertical;
+  min-height: 3.75rem; /* 60px */
+  max-height: 6.25rem; /* 100px */
+}
 
 footer {
   background-color: #f0f0ee; /* Color de fondo del footer */
