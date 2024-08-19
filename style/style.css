@@ -21,10 +21,13 @@ header {
   color: #191919;
 }
 
+/* ==================================================================================== */
+
 .container {
   margin: 0 10%;
 }
 
+/* ==================================================================================== */
 /* Sección del Navbar */
 
 .nav-item:hover {
@@ -33,13 +36,7 @@ header {
   color: #fff;
   transition: 1s;
 }
-.titulo {
-  font-size: large;
-  color: #191919;
-  margin-left: 0.625rem; /* 10px */
-}
 
-/* Agregue una nueva clase para los títulos de las páginas agregar */
 .title-body {
   text-align: center;
   border-bottom: solid;
@@ -67,13 +64,12 @@ header {
   font-size: 3rem;
   margin: 0;
 }
-
 .hero p {
   font-size: 1.5rem;
   margin: 0.5rem 0 0;
 }
-
 /* ==================================================================================== */
+
 .cont-nosotros {
   margin-right: 20%;
   margin: auto;
@@ -81,7 +77,6 @@ header {
   text-align: center;
   justify-content: center;
 }
-
 .nosotros {
   background-color: #f0f0ee;
   display: flex;
@@ -147,6 +142,93 @@ header {
 }
 
 /* ==================================================================================== */
+
+.categories {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2.5rem; /* 40px */
+  flex-wrap: wrap;
+}
+
+.icon-Categories {
+  text-align: center;
+  border: transparent;
+  border-radius: 6.25rem; /* 100px */
+  width: 7.5rem; /* 120px */
+  padding: 1.25rem; /* 20px */
+  margin: 1.25rem; /* 20px */
+}
+
+
+.icon-Categories svg {
+  width: 5rem; /* 80px */
+  height: 5rem; /* 80px */
+  fill: #191919;
+  margin-bottom: 0.625rem; /* 10px */
+}
+
+.icon-Categories h3 {
+  margin: 0;
+  font-size: 1.2em;
+  color: #555;
+}
+
+.link-text {
+  text-decoration: none;
+}
+
+/* Sección de productos */
+.ventas-productos {
+  background-color: #f0f0ee;
+  display: flex;
+  justify-content: space-around;
+  margin: 2.5rem; /* 40px */
+  flex-wrap: wrap;
+}
+
+/* Productos */
+.product {
+  background-color: #fff;
+  padding: 0.625rem; /* 10px */
+  margin-bottom: 1.25rem 0.625rem 0.625rem 0.625rem; /* 20px 10px 10px 10px */
+  box-shadow: 0 0 0.3125rem rgba(0, 0, 0, 0.1); /* 5px */
+  border-radius: 0.625rem; /* 10px */
+  text-align: justify;
+  margin-top: 2.5rem; /* 40px */
+  margin-bottom: 2.5rem; /* 40px */
+  transition-duration: 1s;
+}
+
+.product img {
+  width: 7.5rem; /* 120px */
+  max-width: 4.375rem; /* 70px */
+  height: auto;
+  margin-bottom: 0.625rem; /* 10px */
+  transition-duration: 1s;
+}
+
+.product:hover {
+  box-shadow: 0.625rem 0.3125rem 0.3125rem #747473; /* 10px 5px 5px */
+}
+
+.product p {
+  margin: 0.3125rem 0; /* 5px */
+  color: #777;
+}
+
+.img-producto {
+  width: 7.1875rem; /* 115px */
+  height: 9.375rem; /* 150px */
+}
+
+.img-ctg {
+  width: 7.8125rem; /* 125px */
+  height: 7.5rem; /* 120px */
+}
+
+
+/* ==================================================================================== */
+
 
 .hero-contacto {
   background-image: url(./Imagenes/ORBIT\ brand-5.png);
@@ -250,6 +332,14 @@ textarea {
   min-height: 3.75rem; /* 60px */
   max-height: 6.25rem; /* 100px */
 }
+/* ==================================================================================== */
+
+
+
+
+
+
+/* ==================================================================================== */
 
 footer {
   background-color: #f0f0ee; /* Color de fondo del footer */
