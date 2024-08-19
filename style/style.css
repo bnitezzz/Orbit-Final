@@ -1,38 +1,61 @@
-/* Agregue una fuente de google que me pareció más interesante para mi página web y la enlace directamente con el index */
+/* Variables para colores */
+:root {
+  --primary-bg: #f0f0ee;
+  --primary-color: #191919;
+  --secondary-color: #f1511b;
+  --text-color: #555;
+  --box-shadow: rgba(0, 0, 0, 0.1);
+}
+
+/* Tipografía */
 @font-face {
   font-family: "Roboto";
   src: url(Roboto_Mono/RobotoMono-Italic-VariableFont_wght.ttf);
   font-weight: 500;
 }
 
-/* ==================================================================================== */
-
-/* Cuerpo de Toda la pagina tendra las opciones del body */
 body {
   font-family: "Roboto";
   margin: 0;
   padding: 0;
-  background-color: #f0f0ee;
+  background-color: var(--primary-bg);
+}
+.hero {
+  background-image: url(/style/Imagenes/ORBIT\ brand-1.png);
+  background-size: cover; /* Escala la imagen para cubrir todo el fondo */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  margin: 0;
+  padding: 0;
 }
 
-/* En el encabezado de la página */
-header {
-  background-color: #f0f0ee;
-  color: #191919;
+.cont-index {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); /* Añade un fondo blanco semitransparente */
+  padding: 20px;
+  margin: 50px auto;
+  border-radius: 10px;
+  max-width: 1200px;
 }
-
-/* ==================================================================================== */
-
+/* General */
 .container {
   margin: 0 10%;
 }
 
-/* ==================================================================================== */
-/* Sección del Navbar */
+/* Encabezado */
+header {
+  background-color: var(--primary-bg);
+  color: var(--primary-color);
+}
 
+/* Navbar */
 .nav-item:hover {
   background-color: #ffffff;
-  border-radius: 0.3125rem; /* 5px */
+  border-radius: 5px;
   color: #fff;
   transition: 1s;
 }
@@ -40,84 +63,76 @@ header {
 .title-body {
   text-align: center;
   border-bottom: solid;
-  border-radius: 1.875rem; /* 30px */
+  border-radius: 30px;
   font-size: 1.5em;
-  margin-bottom: 1.25rem; /* 20px */
+  margin-bottom: 20px;
 }
 
-/* ==================================================================================== */
-
+/* Hero */
 .hero {
-  background-image: url("./Imagenes/ORBIT\ brand-1.png");
   background-size: cover;
   background-position: center;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
   text-align: center;
-  color: #ffffff;
+  color: #fff;
   padding: 2rem;
 }
+
+.hero {
+  height: 100vh;
+}
+
 .hero h2 {
   font-size: 3rem;
   margin: 0;
 }
+
 .hero p {
   font-size: 1.5rem;
   margin: 0.5rem 0 0;
 }
-/* ==================================================================================== */
 
-.cont-nosotros {
-  margin-right: 20%;
-  margin: auto;
-  flex-wrap: wrap;
-  text-align: center;
-  justify-content: center;
-}
+/* Sección "Nosotros" */
 .nosotros {
-  background-color: #f0f0ee;
+  background-color: var(--primary-bg);
   display: flex;
   text-align: center;
-  transition-duration: 1s;
+  transition: 1s;
   width: 100%;
+  margin: auto;
+  flex-wrap: wrap;
 }
 
 .nosotros:hover {
   background-color: #fff;
-  box-shadow: 0.625rem 0.3125rem 0.3125rem #f1511b; /* 10px 5px 5px */
-  border-radius: 1.875rem; /* 30px */
+  box-shadow: 10px 5px 5px var(--secondary-color);
+  border-radius: 30px;
 }
 
 .text-nosotros {
-  margin: 1.875rem; /* 30px */
-  margin-top: 5rem; /* 80px */
-}
-.cont-grip {
-  margin-left: 10%;
-  margin-right: 10%;
+  margin: 30px;
+  margin-top: 80px;
 }
 
-/* Estilo para la sección "aboutUs" */
+/* Sección "About Us" */
 .aboutUs {
-  flex-wrap: wrap;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 2rem; /* Espacio entre elementos */
-  padding: 2rem; /* Espaciado alrededor del contenedor */
-  background-color: #f0f0ee; /* Fondo del contenedor */
-  justify-items: center; /* Centrar los elementos en cada celda */
+  gap: 2rem;
+  padding: 2rem;
+  background-color: var(--primary-bg);
+  justify-items: center;
   margin-top: 3rem;
 }
 
-/* Estilo para los elementos "about-icon" dentro de la cuadrícula */
 .about-icon {
   background-color: #fff;
   border-radius: 10px;
   padding: 1rem;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 5px var(--box-shadow);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-align: center;
 }
@@ -127,109 +142,98 @@ header {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* Estilo para las imágenes de los iconos */
 .about-icon img.icon {
   max-width: 100px;
   height: auto;
   margin-bottom: 1rem;
 }
 
-/* Estilo para los párrafos dentro de "about-icon" */
 .about-icon p.propositos {
   font-size: 0.9rem;
-  color: #555;
+  color: var(--text-color);
   margin: 0;
 }
 
-/* ==================================================================================== */
-
+/* Sección "Categories" */
 .categories {
   display: flex;
   justify-content: space-around;
-  margin-bottom: 2.5rem; /* 40px */
+  margin-bottom: 40px;
   flex-wrap: wrap;
 }
 
 .icon-Categories {
   text-align: center;
   border: transparent;
-  border-radius: 6.25rem; /* 100px */
-  width: 7.5rem; /* 120px */
-  padding: 1.25rem; /* 20px */
-  margin: 1.25rem; /* 20px */
+  border-radius: 100px;
+  width: 120px;
+  padding: 20px;
+  margin: 20px;
 }
 
-
 .icon-Categories svg {
-  width: 5rem; /* 80px */
-  height: 5rem; /* 80px */
-  fill: #191919;
-  margin-bottom: 0.625rem; /* 10px */
+  width: 80px;
+  height: 80px;
+  fill: var(--primary-color);
+  margin-bottom: 10px;
 }
 
 .icon-Categories h3 {
   margin: 0;
   font-size: 1.2em;
-  color: #555;
+  color: var(--text-color);
 }
 
 .link-text {
   text-decoration: none;
 }
 
-/* Sección de productos */
+/* Sección "Productos" */
 .ventas-productos {
-  background-color: #f0f0ee;
+  background-color: var(--primary-bg);
   display: flex;
   justify-content: space-around;
-  margin: 2.5rem; /* 40px */
+  margin: 40px;
   flex-wrap: wrap;
 }
 
-/* Productos */
 .product {
   background-color: #fff;
-  padding: 0.625rem; /* 10px */
-  margin-bottom: 1.25rem 0.625rem 0.625rem 0.625rem; /* 20px 10px 10px 10px */
-  box-shadow: 0 0 0.3125rem rgba(0, 0, 0, 0.1); /* 5px */
-  border-radius: 0.625rem; /* 10px */
+  padding: 10px;
+  margin: 40px 10px;
+  box-shadow: 0 0 5px var(--box-shadow);
+  border-radius: 10px;
   text-align: justify;
-  margin-top: 2.5rem; /* 40px */
-  margin-bottom: 2.5rem; /* 40px */
-  transition-duration: 1s;
+  transition: 1s;
 }
 
 .product img {
-  width: 7.5rem; /* 120px */
-  max-width: 4.375rem; /* 70px */
+  width: 120px;
   height: auto;
-  margin-bottom: 0.625rem; /* 10px */
-  transition-duration: 1s;
+  margin-bottom: 10px;
+  transition: 1s;
 }
 
 .product:hover {
-  box-shadow: 0.625rem 0.3125rem 0.3125rem #747473; /* 10px 5px 5px */
+  box-shadow: 10px 5px 5px #747473;
 }
 
 .product p {
-  margin: 0.3125rem 0; /* 5px */
+  margin: 5px 0;
   color: #777;
 }
 
 .img-producto {
-  width: 7.1875rem; /* 115px */
-  height: 9.375rem; /* 150px */
+  width: 115px;
+  height: 150px;
 }
 
 .img-ctg {
-  width: 7.8125rem; /* 125px */
-  height: 7.5rem; /* 120px */
+  width: 125px;
+  height: 120px;
 }
 
-
-/* ==================================================================================== */
-
-
+/* Sección de Contacto */
 .hero-contacto {
   background-image: url(./Imagenes/ORBIT\ brand-5.png);
   background-size: cover;
@@ -254,6 +258,10 @@ header {
   max-width: 24rem;
   text-align: center;
   transition-duration: 1s;
+}
+
+.contact-box:hover {
+  box-shadow: 0.625rem 0.3125rem 0.3125rem #747473; /* 10px 5px 5px */
 }
 
 .contact-container h2 {
@@ -310,7 +318,7 @@ header {
 }
 
 .submit-button:hover {
-  background-color: #ff48008e; /* Color del botón al pasar el mouse */
+  background-color: #c543108e; /* Color del botón al pasar el mouse */
 }
 
 .video-direccion {
@@ -324,7 +332,7 @@ header {
   width: 12.5rem; /* 200px */
   padding: 0.625rem; /* 10px */
   height: 18.75rem; /* 300px */
-  margin-top: 1.25rem; /* 20px */
+  margin-top: 0; /* 20px */
 }
 
 textarea {
@@ -332,17 +340,11 @@ textarea {
   min-height: 3.75rem; /* 60px */
   max-height: 6.25rem; /* 100px */
 }
-/* ==================================================================================== */
 
-
-
-
-
-/* ==================================================================================== */
-
+/* Footer */
 footer {
-  background-color: #f0f0ee; /* Color de fondo del footer */
-  color: #191919; /* Color del texto del footer */
+  background-color: var(--primary-bg);
+  color: var(--primary-color);
   padding: 1rem 0;
   text-align: center;
 }
@@ -353,4 +355,39 @@ footer .container {
 
 footer p {
   margin: 0;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .container {
+    margin: 0 5%;
+  }
+
+  .hero {
+    height: 60vh;
+  }
+
+  .hero h2 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .contact-box {
+    padding: 1rem;
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    background-size: contain; /* Escala la imagen para que se ajuste en pantallas más pequeñas */
+  }
+
+  .cont-index {
+    margin: 20px;
+    padding: 15px;
+  }
 }
