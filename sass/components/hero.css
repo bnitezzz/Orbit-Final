@@ -1,0 +1,15 @@
+.hero {
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  padding: 2rem;
+}
+
+.hero {
+  height: 100vh;
+}/*# sourceMappingURL=hero.css.map */

@@ -1,0 +1,21 @@
+/* Sección "Nosotros" */
+.nosotros {
+  background-color: var(--primary-bg);
+  display: flex;
+  text-align: center;
+  transition: 1s;
+  width: 100%;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.nosotros:hover {
+  background-color: #fff;
+  box-shadow: 10px 5px 5px var(--secondary-color);
+  border-radius: 30px;
+}
+
+.text-nosotros {
+  margin: 30px;
+  margin-top: 80px;
+}

@@ -1,0 +1,23 @@
+
+
+@import 'utils/mixins';
+@import 'utils/functions';
+
+@import 'base/typography';
+@import 'base/base';
+@import 'base/variables';
+
+@import 'layout/header';
+@import 'layout/footer';
+
+@import 'components/hero';
+@import 'components/contenido-index';
+@import 'components/nosotros';
+@import 'components/about-us';
+@import 'components/categories';
+@import 'components/productos';
+@import 'components/contact';
+@import 'components/navbar';
+
+
+@import 'media/media';

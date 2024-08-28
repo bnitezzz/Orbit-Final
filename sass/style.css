@@ -1,0 +1,59 @@
+@font-face {
+  font-family: "Roboto";
+  src: url(Roboto_Mono/RobotoMono-Italic-VariableFont_wght.ttf);
+  font-weight: 500;
+}
+body {
+  font-family: "Roboto";
+  margin: 0;
+  padding: 0;
+  background-color: var(--primary-bg);
+}
+
+body {
+  font-family: "Roboto";
+  margin: 0;
+  padding: 0;
+  background-color: var(--primary-bg);
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(152deg, #a8ada4, #373434, #000000, #050505, #d32225); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  padding: 2rem;
+  height: 100vh;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin: 0.5rem 0 0;
+}
+
+.hero-contacto {
+  background-image: url(./Imagenes/ORBIT\ brand-5.png);
+  background-size: cover;
+  background-position: center;
+  height: 12.5rem; /* 200px */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  color: #f1511b;
+  padding: 2rem;
+}/*# sourceMappingURL=style.css.map */

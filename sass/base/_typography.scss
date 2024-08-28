@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "Roboto";
+    src: url(Roboto_Mono/RobotoMono-Italic-VariableFont_wght.ttf);
+    font-weight: 500;
+}
+
+body {
+    font-family: "Roboto";
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-bg);
+}
