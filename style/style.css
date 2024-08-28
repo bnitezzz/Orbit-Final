@@ -1,6 +1,6 @@
 /* Variables para colores */
 :root {
-  --primary-bg: #f0f0ee;
+  --primary-bg: #ffffff;
   --primary-color: #191919;
   --secondary-color: #f1511b;
   --text-color: #555;
@@ -22,12 +22,28 @@ body {
   background-color: var(--primary-bg);
 }
 .hero {
-  background-image: url(./Imagenes/ORBITBrand1.png);
-  background-size: cover; /* Escala la imagen para cubrir todo el fondo */
-  background-position: center; /* Centra la imagen */
-  background-repeat: no-repeat; /* Evita que la imagen se repita */
-  margin: 0;
-  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: -webkit-linear-gradient(152deg, #a8ada4,#373434,#000000,#050505,#d32225);/* Chrome 10-25, Safari 5.1-6 */background: linear-gradient(152deg, #a8ada4,#373434,#000000,#050505,#d32225);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */                                             
+}
+
+.contenido-index{
+  text-align: center;
+}
+
+.titulo{
+  font-size: 5rem;
+  color: #f0f0f0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  letter-spacing: 0.1rem;
+}
+
+.subtitulo{
+  font-size: 1.5rem;
+  color: #f0f0f0;
+  letter-spacing: 0.2rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
 
 
@@ -350,7 +366,6 @@ footer p {
     display: flex;
     justify-content: end;
   }
-  
 }
 
 /* Media Queries */
@@ -361,7 +376,7 @@ footer p {
   }
 
   .hero {
-    height: 60vh;
+    height: 100%;
   }
 
   .hero h2 {
