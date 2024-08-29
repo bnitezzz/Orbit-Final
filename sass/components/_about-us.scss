@@ -4,33 +4,33 @@
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 2rem;
   padding: 2rem;
-  background-color: var(--primary-bg);
+  background-color: $primary-bg;
   justify-items: center;
   margin-top: 3rem;
-}
 
-.about-icon {
-  background-color: #fff;
-  border-radius: 10px;
-  padding: 1rem;
-  box-shadow: 0 0 5px var(--box-shadow);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  text-align: center;
-}
+  .about-icon {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 0 5px $box-shadow;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
 
-.about-icon:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
 
-.about-icon img.icon {
-  max-width: 100px;
-  height: auto;
-  margin-bottom: 1rem;
-}
+    img.icon {
+      max-width: 100px;
+      height: auto;
+      margin-bottom: 1rem;
+    }
 
-.about-icon p.propositos {
-  font-size: 0.9rem;
-  color: var(--text-color);
-  margin: 0;
+    p.propositos {
+      font-size: 0.9rem;
+      color: $text-color;
+      margin: 0;
+    }
+  }
 }

@@ -1,15 +1,15 @@
 /* Footer */
 footer {
-  background-color: var(--primary-bg);
-  color: var(--primary-color);
+  background-color: $primary-bg;
+  color: $primary-color;
   padding: 1rem 0;
   text-align: center;
-}
 
-footer .container {
-  margin: 0 10%;
-}
+  .container {
+    margin: 0 10%;
+  }
 
-footer p {
-  margin: 0;
+  p {
+    margin: 0;
+  }
 }
