@@ -58,7 +58,7 @@ footer p {
 }
 
 .hero-contacto {
-  background-image: url(../../style/Imagenes/ORBIT\brand-5.png);
+  background-image: url(../.././style/Imagenes/ORBITbrand5.png);
   background-size: cover;
   background-position: center;
   height: 12.5rem; /* 200px */
@@ -154,13 +154,14 @@ footer p {
   text-align: center;
   border: transparent;
   border-radius: 100px;
-  width: 120px;
   padding: 20px;
   margin: 20px;
 }
-.categories .icon-Categories svg {
-  width: 80px;
-  height: 80px;
+.categories .icon-Categories img {
+  width: 120px;
+  height: 120px;
+}
+.categories .icon-Categories .img-ctg img {
   fill: #191919;
   margin-bottom: 10px;
 }

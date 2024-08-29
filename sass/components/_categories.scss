@@ -9,13 +9,15 @@
     text-align: center;
     border: transparent;
     border-radius: 100px;
-    width: 120px;
     padding: 20px;
     margin: 20px;
 
-    .img-ctg {
-      width: 80px;
-      height: 80px;
+    img{
+        width: 120px;
+        height: 120px;
+    }
+
+    .img-ctg img {
       fill: $primary-color;
       margin-bottom: 10px;
     }
